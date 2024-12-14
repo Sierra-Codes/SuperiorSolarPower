@@ -14,12 +14,19 @@ html {
   margin-top: 0px;
   padding: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
-header h1 {
+h1 {
   font-size: 96px;
   font-weight: 700;
   line-height: 1;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h3 {
@@ -27,14 +34,14 @@ h3 {
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 5px;
-  margin: 0;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 20px;
 }
 
 nav {
   display: flex;
-  background-color: RGB(255, 255, 255, 0.4);
+  background-color: RGB(255, 255, 255, 0.6);
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
@@ -62,27 +69,48 @@ section {
 
 .hero {
   background-image: url("panels-pixabay.jpg");
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  height: 100vh; /* Set height (adjust as needed) */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   position: relative;
 }
 
 .hero-container {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: white; /* Text color */
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.green-text {
+  color: rgb(79, 237, 79);
+}
+
+button {
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff6a13;
+  border-radius: 20px;
+  border-style: none;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .services {
