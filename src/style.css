@@ -1,17 +1,96 @@
 :root {
-  --branding-color: #605f5f;
-  --secondary-color: #dff2f6;
+  --branding-color: #003366;
+  --secondary-color: #d7d9e4;
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Poppins", sans-serif;
 }
-
 body {
   font-family: var(--default-font-family);
+  background-color: (var(--secondary-color));
 }
 
 body,
 html {
-  margin: 0;
+  margin-top: 0px;
   padding: 0;
   height: 100%;
+}
+
+header h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  background-color: RGB(255, 255, 255, 0.4);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff6a13;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+section {
+  max-width: 100%;
+}
+
+.hero {
+  background-image: url("panels-pixabay.jpg");
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  height: 100vh; /* Set height (adjust as needed) */
+  position: relative;
+}
+
+.hero-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.services {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
 }
