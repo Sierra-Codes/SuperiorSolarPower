@@ -156,8 +156,38 @@ button:hover {
   border-radius: 10px;
 }
 
-.card {
-  display: flex;
+.card-star {
+  text-align: center; /* Center the stars */
+  margin: 10px 0; /* Optional margin */
+}
+
+.stars i {
+  color: #ffd700; /* Gold color for stars */
+  font-size: 1.5rem; /* Adjust star size */
+  margin: 0 5px; /* Add spacing between stars */
+}
+footer {
+  background-color: var(--branding-color);
+  color: #fc5d02;
+}
+
+footer a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fc5d02;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+footer hr {
+  border-color: #fc5d02;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem; /* Slightly smaller text */
 }
 
 @media (max-width: 768px) {
