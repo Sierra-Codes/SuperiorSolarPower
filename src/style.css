@@ -15,28 +15,33 @@ html {
   margin-top: 0px;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 h1 {
   font-size: 96px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.5;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 500;
   line-height: 1.5;
+  padding-bottom: 30px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
+  padding: 60px;
 }
 
 h4 {
@@ -45,11 +50,11 @@ h4 {
 
 nav {
   display: flex;
-  background-color: RGB(255, 255, 255, 0.6);
+  background-color: RGB(255, 255, 255, 0.3);
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -60,15 +65,51 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #ff6a13;
+  color: #fc5d02;
   font-size: 28px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
 }
-
 section {
   max-width: 100%;
+  display: block;
+  margin: auto 0;
+  padding: 50px;
+}
+
+section p {
+  padding: 10px;
+  line-height: 2;
+}
+
+section ul {
+  line-height: 2;
+}
+
+button {
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff6a13;
+  border-radius: 20px;
+  border-style: none;
+  padding: 20px;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+
+button:hover {
+  color: #ff6a13;
+  background-color: white;
+  border-color: #ff6a13;
 }
 
 .hero {
@@ -96,42 +137,27 @@ section {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+
 .green-text {
   color: rgb(79, 237, 79);
 }
 
-button {
-  display: block;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #ff6a13;
-  border-radius: 20px;
-  border-style: none;
-  padding: 20px;
-  margin-top: 60px;
-  cursor: pointer;
-  transition: ease-in-out;
-}
-
-button:hover {
-  color: #ff6a13;
-  background-color: white;
-  border-color: #ff6a13;
-}
-
-.image-fluid {
-  max-width: 100%;
-  display: block;
-}
-
 .services {
   background-color: var(--secondary-color);
+}
+
+.services p {
+  font-size: 22px;
+}
+
+.img-fluid {
+  display: block;
+  margin: auto 0;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
 }
 
 @media (max-width: 768px) {
