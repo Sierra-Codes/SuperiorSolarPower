@@ -4,15 +4,12 @@
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Poppins", sans-serif;
 }
+
 body {
   font-family: var(--default-font-family);
-  background-color: (var(--secondary-color));
+  background-color: var(--secondary-color);
   font-size: 18px;
-}
-
-body,
-html {
-  margin-top: 0px;
+  margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
@@ -44,72 +41,53 @@ h3 {
   padding: 60px;
 }
 
-h4 {
-  font-size: 20px;
-}
-
 nav {
   display: flex;
-  background-color: RGB(255, 255, 255, 0.3);
-  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.3);
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 20px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 1000;
+}
+
+nav img {
+  max-width: 160px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #fc5d02;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  padding: 20px;
-}
-section {
-  max-width: 100%;
-  display: block;
-  margin: auto 0;
-  padding: 50px;
 }
 
-section p {
-  padding: 10px;
-  line-height: 2;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-section ul {
-  line-height: 2;
+.contact-item i {
+  color: #fc5d02;
+  font-size: 24px;
 }
 
-button {
-  display: block;
-  color: white;
+.contact-item span {
+  color: #fc5d02;
+  font-size: 25px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #ff6a13;
-  border-radius: 20px;
-  border-style: none;
-  padding: 20px;
-  margin-top: 80px;
-  cursor: pointer;
-  transition: ease-in-out;
-}
-
-button:hover {
-  color: #ff6a13;
-  background-color: white;
-  border-color: #ff6a13;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero {
@@ -134,8 +112,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
 .green-text {
@@ -143,17 +120,57 @@ button:hover {
 }
 
 .services {
-  background-color: var(--secondary-color);
+  background-color: white;
+  padding-bottom: 20px;
 }
 
-.services p {
-  font-size: 22px;
+.services-container {
+  margin: 0 auto;
+}
+
+.services-container .row {
+  margin-bottom: 30px;
+}
+
+.services .row {
+  background-color: var(--secondary-color);
+}
+.services-container .service-description h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services-container .service-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.technology-container {
+  margin: 0 30px;
+  padding: 0 30px;
+}
+
+.technology-container h2 {
+  text-align: center;
+}
+
+.testimonials {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.testimonials .card {
+  background-color: var(--secondary-color);
 }
 
 .img-fluid {
   display: block;
-  margin: auto 0;
+  margin: auto;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-star {
@@ -162,7 +179,7 @@ button:hover {
 }
 
 .stars i {
-  color: #ffd700; /* Gold color for stars */
+  color: #fc5d02; /* Gold color for stars */
   font-size: 1.5rem; /* Adjust star size */
   margin: 0 5px; /* Add spacing between stars */
 }
@@ -190,8 +207,119 @@ footer p {
   font-size: 0.9rem; /* Slightly smaller text */
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   nav {
-    padding: 15px 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav img {
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .contact-item {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .contact-item span {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 48px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .hero-container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .contact-item i {
+    font-size: 20px;
+  }
+
+  .contact-item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px;
+  }
+
+  .services-container .service-description h2 {
+    font-size: 24px;
+  }
+
+  .services-container .service-description p {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  img.img-fluid {
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    padding: 10px;
+  }
+
+  .services-container .service-description h2 {
+    font-size: 20px;
+  }
+
+  .services-container .service-description p {
+    font-size: 14px;
   }
 }

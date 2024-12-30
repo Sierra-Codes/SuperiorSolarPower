@@ -27,9 +27,13 @@
   <body>
     <section class="hero">
       <nav>
-        <img src="src/logo.png" alt="superior-solar-power-logo" width="260" />
+        <img src="src/logo.png" alt="superior-solar-power-logo" width="300" />
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>01983 642 611</span>
+        </div>
+
         <div class="nav-links">
-          <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
@@ -37,85 +41,94 @@
       </nav>
 
       <div class="hero-container" id="hero">
-        <h3>- Solar Power services -</h3>
         <h1 class>Save, Connect & <span class="green-text">Go Green</span></h1>
-        <h2>Working across Dorset, Sussex, Surrey & Kent</h2>
-        <button>Contact us</button>
+        <h2>Solar power services across Dorset, Sussex, Surrey & Kent</h2>
       </div>
     </section>
 
     <section class="about" id="about" style="min-height: 100vh; width: 100vw" ;>
       <h3 class="text-center text-muted mt-35">- about us -</h3>
 
-      <div class="row">
-        <!-- First Column -->
-        <div class="col-12 col-md-4">
-          <h2 class="text-center pb-5">Why use solar panels</h2>
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- First Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title text-center pb-3">
+                  Why use solar panels
+                </h2>
+                <p class="card-text">
+                  Having solar panels installed gives you the ability to produce
+                  your own energy that will:
+                </p>
+                <ul class="ps-3">
+                  <li>Lower the cost of your utility bills</li>
+                  <li>Increase the value of property</li>
+                  <li>
+                    Help reduce your carbon footprint, benefiting the future of
+                    our planet
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <p>
-            Having solar panels installed gives you the ability to produce your
-            own energy that will:
-          </p>
-          <ul class="ps-5">
-            <li>lower the cost of your utility bills</li>
-            <li>increase the value of property</li>
-            <li>
-              help reduce your carbon footprint, benefiting the future of our
-              planet
-            </li>
-          </ul>
-        </div>
+          <!-- Second Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title text-center pb-3">Who we are</h2>
+                <p class="card-text">
+                  We have over 30 years in the electrical industry and pride
+                  ourselves on being helpful and transparent. <br />
+                  Our promise is to be customer-focused and professional. <br />
+                  We are fully accredited with the
+                  <a
+                    href="https://mcscertified.com/consumers-communities/certificate-queries/"
+                    target="_blank"
+                    >MSC</a
+                  >,
+                  <a href="https://www.napit.org.uk/" target="_blank">NAPIT</a>,
+                  and
+                  <a
+                    href="https://www.recc.org.uk/scheme/consumer-code"
+                    target="_blank"
+                    >RECC</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <!-- Second Column -->
-        <div class="col-12 col-md-4">
-          <h2 class="text-center pb-5">Who we are</h2>
-          <p>
-            We have over 30 years in the electrical industry and pride ourselves
-            on being helpful and transparent
-            <br />
-            Our promise is to be customer focused and professional
-            <br />
-            We are fully accredited with the
-            <a
-              href="https://mcscertified.com/consumers-communities/certificate-queries/"
-              target="_blank"
-              >MSC</a
-            >,
-
-            <a href="https://www.napit.org.uk/" target="_blank">NAPIT</a>, and
-            <a
-              href="https://www.recc.org.uk/scheme/consumer-code"
-              target="_blank"
-              >RECC.</a
-            >
-          </p>
-        </div>
-
-        <!-- Third Column -->
-        <div class="col-12 col-md-4">
-          <h2 class="text-center pb-5">What we do</h2>
-
-          <p>
-            We’re here to help you take advantage of a thriving renewable energy
-            solution. With our experience, we can help you gain the most from
-            your photovoltaic system. Superior Solar will:
-          </p>
-          <ul class="ps-5">
-            <li>work with you from planning to completion</li>
-            <li>
-              provide full installation of the panels and inverter that converts
-              solar waves into energy
-            </li>
-            <li>offer a free estimation service</li>
-            <li>
-              be available to give further assistance on how our products can
-              benefit you.
-            </li>
-          </ul>
+          <!-- Third Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title text-center pb-3">What we do</h2>
+                <p class="card-text">
+                  We can help you gain the most from your photovoltaic system.
+                  Superior Solar will:
+                </p>
+                <ul class="ps-3">
+                  <li>Work with you from planning to completion</li>
+                  <li>
+                    Provide full installation of the panels and inverter that
+                    converts solar waves into energy
+                  </li>
+                  <li>Offer a free estimation service</li>
+                  <li>
+                    Be available to give further assistance on how our products
+                    can benefit you
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="text-center mb-0 pb-0">
+      <div class="text-center mb-0 pb-0 d-none d-md-block">
         <img
           src="src/accred-logos-line.png"
           alt="MCS-UKAS-NAPIT-RECC-CTSI-logos"
@@ -124,170 +137,234 @@
         />
       </div>
     </section>
-    <section
-      class="services"
-      id="services"
-      style="min-height: 100vh; width: 100vw"
-    >
-      <div class="services-container">
-        <div class="content">
-          <h3 class="text-muted">- services -</h3>
-          <h2 class="text-center mb-5">What we offer</h2>
-        </div>
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
+
+    <section class="services">
+      <div class="services-container container px-3 px-lg-5">
+        <h3 class="text-muted text-center">- services -</h3>
+        <h2 class="text-center mb-5">What we offer</h2>
+      </div>
+
+      <!--alternative section-->
+      <div class="container my-5">
+        <!-- Solar PV Section -->
+        <div class="row align-items-center mb-5 border rounded shadow p-4">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
+          >
             <img
               src="src/PV.png"
               alt="residential-solar-panels"
-              class="img-fluid"
-              width="700"
+              class="img-fluid rounded"
+              style="max-width: 80%; height: auto"
             />
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <div class="content">
-              <div class="service-description">
-                <h2>Solar PV</h2>
-                <p class="mb-5">
-                  Solar panels are made with semiconductor materials, which have
-                  been treated to create an electric field. When sunlight hits
-                  the solar panel, the energy from the sunlight is absorbed by
-                  these materials, which causes the electrons to move and
-                  generate an electric current. It’s this current that then
-                  fuels your home, business, and other buildings.
-                </p>
-              </div>
-            </div>
+          <div class="col-12 col-md-6">
+            <h2 class="mb-3 text-primary">Solar PV</h2>
+            <p class="service">
+              Solar panels are made with semiconductor materials, which have
+              been treated to create an electric field. When sunlight hits the
+              solar panel, energy is absorbed, causing electrons to move and
+              generate an electric current. This fuels your home, business, and
+              other buildings.
+            </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
-            <div class="content">
-              <div class="service-description">
-                <h2>Battery storage</h2>
-                <p class="mb-5">
-                  Integrating a battery means that the energy you’ve converted
-                  can be used throughout the year. It allows you to take
-                  advantage of 100% of the energy you produce. We would be happy
-                  to discuss with you how best to set up your system so that you
-                  can maximise the most from your green energy.
-                </p>
-              </div>
-            </div>
+
+        <!-- Battery Storage Section -->
+        <div
+          class="row align-items-center flex-column-reverse flex-md-row mb-5 border rounded shadow p-4"
+        >
+          <div class="col-12 col-md-6">
+            <h2 class="mb-3 text-success">Battery Storage</h2>
+            <p class="service">
+              Integrating a battery allows the energy you produce to be stored
+              and used throughout the year. It enables you to take advantage of
+              100% of the energy you produce. We can help you design a system
+              that maximizes your green energy.
+            </p>
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
+          >
             <img
               src="src/batterystorage.png"
-              alt="residential-solar-panels"
-              class="img-fluid"
-              width="700"
+              alt="battery-storage"
+              class="img-fluid rounded"
+              style="max-width: 80%; height: auto"
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col d-none d-lg-block">
+
+        <!-- Commercial PV Section -->
+        <div class="row align-items-center border rounded shadow p-4">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
+          >
             <img
               src="src/commercial-markusspiske.jpg"
-              alt="residential-solar-panels"
-              class="img-fluid"
-              width="700"
+              alt="commercial-solar-panels"
+              class="img-fluid rounded"
+              style="max-width: 80%; height: auto"
             />
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <div class="content">
-              <div class="mt-4 service-description">
-                <h2>Commercial PV</h2>
-                <p class="mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime rem reprehenderit aperiam. Sed, expedita quos
-                  temporibus repudiandae porro eos quaerat ab mollitia. Saepe
-                  sint, quae quos perspiciatis facilis eum alias.
-                </p>
+          <div class="col-12 col-md-6">
+            <h2 class="mb-3 text-warning">Commercial PV</h2>
+            <p class="service">
+              We offer tailored commercial solar panel solutions to help your
+              business reduce energy costs and lower its carbon footprint. Our
+              team ensures a seamless installation process to meet your specific
+              requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of alternative section-->
+
+    <section class="technology">
+      <div class="technology-container">
+        <h3>- technology -</h3>
+        <h2>What technology we use</h2>
+
+        We understand that making the switch away from expensive fossil fuels is
+        a long-term commitment. Therefore, we only use high-quality solar
+        products from leading manufacturers to suit your needs and budget. With
+        our trusted products and expert installation, you can have peace of mind
+        that your solar installation for the years to come. We parternered with
+        the following technology prodivers to ensure maximun quality in the
+        services we offer:
+        <div class="tech-logos d-flex my-5">
+          <img
+            src="src/jaSolar.png"
+            alt="JA-SOLAR-logo"
+            class="img-fluid rounded"
+            style="max-width: 10%; height: auto"
+          />
+
+          <img
+            src="src/solis.png"
+            alt="solis-logo"
+            class="img-fluid rounded"
+            style="max-width: 60%; height: auto"
+          />
+
+          <img
+            src="src/goodwe.svg"
+            alt="Goodwe-logo"
+            class="img-fluid rounded"
+            style="max-width: 10%; height: auto"
+          />
+
+          <img
+            src="src/GivEnergy.png"
+            alt="GiveEnergy-logo"
+            class="img-fluid rounded"
+            style="max-width: 10%; height: auto"
+          />
+          <img
+            src="src/skyline.png"
+            alt="skyline-logo"
+            class="img-fluid rounded"
+            style="max-width: 20%; height: auto"
+          />
+
+          <img
+            src="src/pylontech.svg"
+            alt="Pylontech-logo"
+            class="img-fluid rounded"
+            style="max-width: 70%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <h3>- Testimonials -</h3>
+        <h2 class="text-center">What people say about us</h2>
+
+        <div class="container my4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card h-100">
+                <div class="card-star">
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Terry George</h5>
+                  <p class="card-text">
+                    Just had some work done by Superior Solar Ltd and I have to
+                    say what a great job they done very professional. Very
+                    pleased with the service and the overall work the guys very
+                    pleasant and hard working I would recommend them.
+                    (10/10/2024)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card h-100">
+                <div class="card-star">
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Perry Powell</h5>
+                  <p class="card-text">
+                    What can I say other than a proper job! Had my solar panels
+                    and heat pump installed by what I can say is the best
+                    contractor I have ever had the pleasure of dealing with.
+                    Here early everyday and got the job done a day early and the
+                    quality was next to none. I’d pay double the price for the
+                    work I had done it was that good ! Can’t thank the guys
+                    enough and I look forward to doing more business in the
+                    future Thank you again (21/07/2024).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card h-100">
+                <div class="card-star">
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Kayleigh Brodie</h5>
+                  <p class="card-text">
+                    Very happy with superior solar,before the solar panel
+                    installation ,i was explained to in depth about the process
+                    of what to be expected.After job completion i was also given
+                    information about how the panels and battery storage
+                    works,the team was very professional, friendly reliable and
+                    thorough ,which made me feel happy from the start to finish,
+                    would highly recommend. (18/07/2024).
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="testimonials"></section>
-    <h3>- Testimonials -</h3>
-    <h2 class="text-center">What people say about us</h2>
 
-    <div class="container my4">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card h-100">
-            <div class="card-star">
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Terry George</h5>
-              <p class="card-text">
-                Just had some work done by Superior Solar Ltd and I have to say
-                what a great job they done very professional. Very pleased with
-                the service and the overall work the guys very pleasant and hard
-                working I would recommend them. (10/10/2024)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card h-100">
-            <div class="card-star">
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Perry Powell</h5>
-              <p class="card-text">
-                What can I say other than a proper job! Had my solar panels and
-                heat pump installed by what I can say is the best contractor I
-                have ever had the pleasure of dealing with. Here early everyday
-                and got the job done a day early and the quality was next to
-                none. I’d pay double the price for the work I had done it was
-                that good ! Can’t thank the guys enough and I look forward to
-                doing more business in the future Thank you again (21/07/2024).
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card h-100">
-            <div class="card-star">
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Kayleigh Brodie</h5>
-              <p class="card-text">
-                Very happy with superior solar,before the solar panel
-                installation ,i was explained to in depth about the process of
-                what to be expected.After job completion i was also given
-                information about how the panels and battery storage works,the
-                team was very professional, friendly reliable and thorough
-                ,which made me feel happy from the start to finish, would highly
-                recommend. (18/07/2024).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section>contact information</section>
 
     <footer class id="contact">
       <div class="container">
