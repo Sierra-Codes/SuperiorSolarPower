@@ -33,7 +33,11 @@
           <i class="fa-solid fa-phone"></i>
           <span>01983 642 611</span>
         </div>
-
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#services">Services</a>
@@ -42,12 +46,13 @@
       </nav>
 
       <div class="hero-container" id="hero">
-        <h1 class>Save, Connect & <span class="green-text">Go Green</span></h1>
+        <h1>Save, Connect & <span class="green-text">Go Green</span></h1>
+
         <h2>Solar power services across Dorset, Sussex, Surrey & Kent</h2>
       </div>
     </section>
 
-    <section class="about" id="about" style="min-height: 100vh; width: 100vw" ;>
+    <section class="about" id="about" style="min-height: 100vh; width: 100vw">
       <h3 class="text-center text-muted mt-35">- about us -</h3>
 
       <div class="container my-5">
@@ -167,7 +172,7 @@
       <!--intro section end-->
     </section>
     <!--services section start-->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services-container container px-3 px-lg-5">
         <h3 class="text-muted text-center">- services -</h3>
         <h2 class="text-center mb-5">What we offer</h2>
@@ -391,7 +396,7 @@
     </section>
     <!--testimonials section end-->
     <!--contact info start-->
-    <section class="contact py-5">
+    <section class="contact py-5" id="contact">
       <div class="container">
         <h3 class="text-center mb-3">- Contact -</h3>
         <h2 class="text-center mb-4">How to get in touch with us</h2>
@@ -429,5 +434,16 @@
       </div>
     </footer>
     <!--footer section end-->
+    <!--hamburger menu for responsiveness -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
