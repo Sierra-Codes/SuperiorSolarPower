@@ -160,13 +160,13 @@ nav a {
 
 .stars i {
   color: var(--highlight-color);
-  font-size: 1.5rem;
+  font-size: 0.9375rem;
   margin: 0 5px;
 }
 
 .card-text {
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .contact {
