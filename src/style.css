@@ -183,28 +183,52 @@ nav a {
   font-size: 1.5rem; /* Adjust star size */
   margin: 0 5px; /* Add spacing between stars */
 }
+
+.contact {
+  padding: 30px 15px;
+}
+
+.contact h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap's primary color */
+}
+
+.contact a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 footer {
   background-color: var(--branding-color);
   color: #fc5d02;
+  padding: 20px 15px;
 }
 
 footer a {
-  text-decoration: none; /* Remove underline from links */
-  color: #fc5d02;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
 
-footer h5 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-footer hr {
-  border-color: #fc5d02;
-}
-
-footer p {
+footer .row {
   margin: 0;
-  font-size: 0.9rem; /* Slightly smaller text */
 }
 
 /* Media Queries for Responsiveness */
