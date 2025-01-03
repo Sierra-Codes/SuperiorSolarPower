@@ -20,8 +20,7 @@ h1 {
   font-size: 96px;
   font-weight: 700;
   line-height: 1.5;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding: 40px 0 60px 0;
 }
 
 h2 {
@@ -69,7 +68,7 @@ nav a {
   color: #fc5d02;
   font-size: 25px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--heading-font-family);
 }
 
 .contact-item {
@@ -78,16 +77,19 @@ nav a {
   gap: 15px;
 }
 
-.contact-item i {
+.contact-item i,
+.contact-item span {
   color: #fc5d02;
+}
+
+.contact-item i {
   font-size: 24px;
 }
 
 .contact-item span {
-  color: #fc5d02;
   font-size: 25px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--heading-font-family);
 }
 
 .hero {
@@ -119,22 +121,22 @@ nav a {
   color: rgb(79, 237, 79);
 }
 
-.services {
+.services,
+.testimonials {
   background-color: white;
   padding-bottom: 20px;
 }
 
-.services-container {
+.services-container,
+.technology-container {
   margin: 0 auto;
 }
 
-.services-container .row {
-  margin-bottom: 30px;
-}
-
-.services .row {
+.services-container .row,
+.testimonials .card {
   background-color: var(--secondary-color);
 }
+
 .services-container .service-description h2 {
   font-size: 28px;
   font-weight: 700;
@@ -147,22 +149,8 @@ nav a {
   margin-bottom: 20px;
 }
 
-.technology-container {
-  margin: 0 30px;
-  padding: 0 30px;
-}
-
 .technology-container h2 {
   text-align: center;
-}
-
-.testimonials {
-  background-color: white;
-  padding-bottom: 20px;
-}
-
-.testimonials .card {
-  background-color: var(--secondary-color);
 }
 
 .img-fluid {
@@ -174,14 +162,14 @@ nav a {
 }
 
 .card-star {
-  text-align: center; /* Center the stars */
-  margin: 10px 0; /* Optional margin */
+  text-align: center;
+  margin: 10px 0;
 }
 
 .stars i {
-  color: #fc5d02; /* Gold color for stars */
-  font-size: 1.5rem; /* Adjust star size */
-  margin: 0 5px; /* Add spacing between stars */
+  color: #fc5d02;
+  font-size: 1.5rem;
+  margin: 0 5px;
 }
 
 .contact {
@@ -207,7 +195,7 @@ nav a {
 
 .contact a {
   text-decoration: none;
-  color: #007bff; /* Bootstrap's primary color */
+  color: #007bff;
 }
 
 .contact a:hover {
@@ -266,8 +254,7 @@ footer .row {
 
   h1 {
     font-size: 48px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 0 30px 0;
   }
 
   h2 {
@@ -282,6 +269,27 @@ footer .row {
   .hero-container {
     padding-top: 50px;
     padding-bottom: 20px;
+  }
+
+  .services-container {
+    padding: 20px;
+  }
+
+  .services-container .service-description h2 {
+    font-size: 24px;
+  }
+
+  .services-container .service-description p {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  img.img-fluid {
+    max-width: 70%;
+    margin-bottom: 20px;
   }
 }
 
@@ -309,32 +317,7 @@ footer .row {
   .contact-item span {
     font-size: 14px;
   }
-}
 
-@media (max-width: 768px) {
-  .services-container {
-    padding: 20px;
-  }
-
-  .services-container .service-description h2 {
-    font-size: 24px;
-  }
-
-  .services-container .service-description p {
-    font-size: 16px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  img.img-fluid {
-    max-width: 70%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
   .services-container {
     padding: 10px;
   }
