@@ -25,50 +25,53 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <!--intro section start-->
-    <section class="hero">
-      <nav>
-        <img src="src/logo.png" alt="superior-solar-power-logo" width="300" />
-        <div class="contact-item">
-          <i class="fa-solid fa-phone"></i>
-          <span>01983 642 611</span>
-        </div>
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
+    <!--header section start-->
+    <section class="hero py-5">
       <div class="hero-container" id="hero">
-        <h1>Save, Connect & <span class="green-text">Go Green</span></h1>
+        <nav>
+          <img
+            src="src/logo-white.png"
+            alt="superior-solar-power-logo"
+            width="200"
+          />
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#footer">Contact</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact phone">01983 642 611</div>
+            <a href="mailto:info@superior-solar.co.uk" class="contact email">
+              info@superior-solar.co.uk
+            </a>
+          </div>
+        </nav>
 
+        <h1>Save, Connect & <span class="green-text">Go Green</span></h1>
         <h2>Solar power services across Dorset, Sussex, Surrey & Kent</h2>
       </div>
     </section>
-
-    <section class="about" id="about" style="min-height: 100vh; width: 100vw">
-      <h3 class="text-center text-muted mt-35">- about us -</h3>
-
-      <div class="container my-5">
+    <!--header section end-->
+    <!--about section start-->
+    <section class="about py-5" id="about">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">- About us -</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- First Card -->
           <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title text-center pb-3">
-                  Why use solar panels
-                </h2>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <h2 class="card-title text-center">Why solar panels</h2>
                 <p class="card-text">
                   Having solar panels installed gives you the ability to produce
                   your own energy that will:
                 </p>
-                <ul class="ps-3">
+                <ul>
                   <li>Lower the cost of your utility bills</li>
                   <li>Increase the value of property</li>
                   <li>
@@ -82,13 +85,15 @@
 
           <!-- Second Card -->
           <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title text-center pb-3">Who we are</h2>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <h2 class="card-title text-center">Who we are</h2>
                 <p class="card-text">
                   We have over 30 years in the electrical industry and pride
                   ourselves on being helpful and transparent. <br />
+                  <br />
                   Our promise is to be customer-focused and professional. <br />
+                  <br />
                   We are fully accredited with the
                   <a
                     href="https://mcscertified.com/consumers-communities/certificate-queries/"
@@ -109,89 +114,49 @@
 
           <!-- Third Card -->
           <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title text-center pb-3">What we do</h2>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <h2 class="card-title text-center">What we do</h2>
                 <p class="card-text">
                   We can help you gain the most from your photovoltaic system.
                   Superior Solar will:
                 </p>
-                <ul class="ps-3">
+                <ul>
                   <li>Work with you from planning to completion</li>
                   <li>
                     Provide full installation of the panels and inverter that
                     converts solar waves into energy
                   </li>
                   <li>Offer a free estimation service</li>
-                  <li>
-                    Be available to give further assistance on how our products
-                    can benefit you
-                  </li>
+                  <li>Assist and advise on how our products can benefit you</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--cert logos start-->
 
-      <section class="image-gallery py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <!-- Image 1 -->
-            <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-              <img
-                src="src/1.MCSCertified.png"
-                alt="MCS-cert-logo"
-                class="img-fluid rounded"
-                style="max-width: 50%; height: auto"
-              />
-            </div>
-            <!-- Image 2 -->
-            <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-              <img
-                src="src/2.UKAS-NAPIT-logo.jpeg"
-                alt="UKAS-NAPIT-cert-logo"
-                class="img-fluid rounded"
-                style="max-width: 70%; height: auto"
-              />
-            </div>
-            <!-- Image 3 -->
-            <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-              <img
-                src="src/3.recc-ctsi-code.jpeg"
-                alt="recc-ctsi-code-logo"
-                class="img-fluid rounded"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--cert logos end-->
-      <!--intro section end-->
+      <!--about section end-->
     </section>
+
     <!--services section start-->
-    <section class="services" id="services">
-      <div class="services-container container px-3 px-lg-5">
-        <h3 class="text-muted text-center">- services -</h3>
-        <h2 class="text-center mb-5">What we offer</h2>
-      </div>
-      <div class="container my-5">
-        <!-- Solar PV Section -->
-        <div class="row align-items-center mb-5 border rounded shadow p-4">
+    <section class="services py-5" id="services">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">- What we offer -</h2>
+        <!-- Solar  Section -->
+        <div class="row align-items-center mb-4 border rounded shadow p-4">
           <div
             class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
           >
             <img
-              src="src/PV.png"
+              src="src/residential.jpeg"
               alt="residential-solar-panels"
               class="img-fluid rounded"
               style="max-width: 80%; height: auto"
             />
           </div>
           <div class="col-12 col-md-6">
-            <h2 class="mb-3 text-primary">Solar PV</h2>
+            <h2 class="mb-3 text-primary">Residential</h2>
             <p class="service">
               Solar panels are made with semiconductor materials, which have
               been treated to create an electric field. When sunlight hits the
@@ -204,7 +169,7 @@
 
         <!-- Battery Storage Section -->
         <div
-          class="row align-items-center flex-column-reverse flex-md-row mb-5 border rounded shadow p-4"
+          class="row align-items-center flex-column-reverse flex-md-row mb-4 border rounded shadow p-4"
         >
           <div class="col-12 col-md-6">
             <h2 class="mb-3 text-success">Battery Storage</h2>
@@ -227,8 +192,8 @@
           </div>
         </div>
 
-        <!-- Commercial PV Section -->
-        <div class="row align-items-center border rounded shadow p-4">
+        <!-- Commercial  Section -->
+        <div class="row align-items-center border rounded shadow p-4 mb-0">
           <div
             class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
           >
@@ -240,7 +205,7 @@
             />
           </div>
           <div class="col-12 col-md-6">
-            <h2 class="mb-3 text-warning">Commercial PV</h2>
+            <h2 class="mb-3 text-warning">Commercial</h2>
             <p class="service">
               We offer tailored commercial solar panel solutions to help your
               business reduce energy costs and lower its carbon footprint. Our
@@ -254,11 +219,11 @@
     <!--services section end-->
 
     <!--technology section start-->
-    <section class="technology py-5">
-      <div class="container">
-        <h3 class="text-center text-muted mb-3">- technology -</h3>
-        <h2 class="text-center mb-4">What technology we use</h2>
-        <p class="text-center">
+
+    <section class="technology py-5" id="technology">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">- What technology we use -</h2>
+        <p class="text-center mb-4">
           We understand that making the switch away from expensive fossil fuels
           is a long-term commitment. Therefore, we only use high-quality solar
           products from leading manufacturers to suit your needs and budget.
@@ -268,69 +233,109 @@
           quality in the services we offer:
         </p>
         <div
-          class="tech-logos d-flex flex-wrap justify-content-center align-items-center gap-4 my-5"
+          class="tech-logos d-flex flex-wrap justify-content-center align-items-center gap-4"
         >
           <img
             src="src/jaSolar.png"
             alt="JA-SOLAR-logo"
             class="img-fluid rounded"
-            style="max-width: 10%; height: auto"
+            style="flex: 1 0 8%; height: auto; max-width: 8%"
           />
           <img
             src="src/solis.png"
             alt="solis-logo"
             class="img-fluid rounded"
-            style="max-width: 60%; height: auto"
+            style="flex: 1 0 8%; height: auto; max-width: 8%"
           />
           <img
             src="src/goodwe.svg"
             alt="Goodwe-logo"
             class="img-fluid rounded"
-            style="max-width: 10%; height: auto"
+            style="flex: 1 0 8%; height: auto; max-width: 8%"
           />
           <img
             src="src/GivEnergy.png"
             alt="GiveEnergy-logo"
             class="img-fluid rounded"
-            style="max-width: 10%; height: auto"
+            style="flex: 1 0 8%; height: auto; max-width: 8%"
           />
           <img
             src="src/skyline.png"
             alt="skyline-logo"
             class="img-fluid rounded"
-            style="max-width: 20%; height: auto"
+            style="flex: 1 0 15%; height: auto; max-width: 15%"
           />
           <img
             src="src/pylontech.svg"
             alt="Pylontech-logo"
             class="img-fluid rounded"
-            style="max-width: 70%; height: auto"
+            style="flex: 1 0 10%; height: auto; max-width: 10%"
           />
         </div>
       </div>
     </section>
-
     <!--technology section end-->
-    <!--testimonials section start-->
-    <section class="testimonials">
-      <h3>- Testimonials -</h3>
-      <h2 class="text-center">What people say about us</h2>
 
-      <div class="container my4">
+    <!--accreditation section start-->
+
+    <section class="accreditation py-5" id="accreditations">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">
+          - Fully Accredited for Safe and Reliable Installations -
+        </h2>
+        <p class="text-center mb-4">
+          Superior Solar is a fully accredited electric and solar installation
+          company. Our industry accreditations mean that every job we do is
+          fully licensed and meets all UK and local regulations. You can trust
+          us to handle all the necessary permits and inspections, ensuring your
+          electrical and solar systems are safe and reliable.
+        </p>
+        <div
+          class="image-row d-flex flex-wrap justify-content-center align-items-center gap-4"
+        >
+          <img
+            src="src/1.MCSCertified.png"
+            alt="MCS Certification Logo"
+            class="img-fluid rounded"
+            style="flex: 1 0 20%; max-width: 20%; height: auto"
+          />
+          <img
+            src="src/2.UKAS-NAPIT-logo.jpeg"
+            alt="UKAS NAPIT Certification Logo"
+            class="img-fluid rounded"
+            style="flex: 1 0 20%; max-width: 20%; height: auto"
+          />
+          <img
+            src="src/3.recc-ctsi-code.jpeg"
+            alt="RECC CTSI Certification Logo"
+            class="img-fluid rounded"
+            style="flex: 1 0 20%; max-width: 20%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+    <!--accreditation section end-->
+
+    <!--testimonials section start-->
+    <section class="testimonials py-5">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">- What people say about us -</h2>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card h-100">
-              <div class="card-star">
-                <span class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Terry George</h5>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4">
+                  <h5 class="card-title mb-0">Terry George</h5>
+                  <div class="card-star mb-0 ms-3">
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
                 <p class="card-text">
                   Just had some work done by Superior Solar Ltd and I have to
                   say what a great job they done very professional. Very pleased
@@ -341,18 +346,21 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card h-100">
-              <div class="card-star">
-                <span class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Perry Powell</h5>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4">
+                  <h5 class="card-title mb-0">Perry Powell</h5>
+                  <div class="card-star mb-0 ms-3">
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <h5 class="card-title"></h5>
                 <p class="card-text">
                   What can I say other than a proper job! Had my solar panels
                   and heat pump installed by what I can say is the best
@@ -367,18 +375,21 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card h-100">
-              <div class="card-star">
-                <span class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Kayleigh Brodie</h5>
+            <div class="card h-100 custom-shadow">
+              <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4">
+                  <h5 class="card-title mb-0">Kayleigh Brodie</h5>
+                  <div class="card-star mb-0 ms-3">
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+
                 <p class="card-text">
                   Very happy with superior solar,before the solar panel
                   installation ,i was explained to in depth about the process of
@@ -395,45 +406,58 @@
       </div>
     </section>
     <!--testimonials section end-->
-    <!--contact info start-->
-    <section class="contact py-5" id="contact">
-      <div class="container">
-        <h3 class="text-center mb-3">- Contact -</h3>
-        <h2 class="text-center mb-4">How to get in touch with us</h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 text-center">
+
+    <!-- Footer Section Start -->
+    <footer class="py-5" id="footer">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
             <p class="mb-2">
-              <strong>Email: </strong>
-              <a href="mailto:info@superior-solar.co.uk" class="text-dark">
+              <a href="mailto:info@superior-solar.co.uk" class="text-white">
                 info@superior-solar.co.uk
               </a>
             </p>
-            <p>
-              <strong>Phone: </strong>
-              <a href="tel:01983642611" class="text-dark"> 01983 642 611 </a>
+            <p class="mb-2">
+              <a href="tel:01983642611" class="text-white">01983 642 611</a>
+            </p>
+            <p class="mb-0">
+              Superior Solar Ltd Unit 4 Dane John Works, Gordon Rd, Canterbury,
+              CT1 3PP Registered Company in England and Wales 14528205.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--contact info end-->
-    <!--footer section start-->
-    <footer class="py-4 bg text-white">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div
-            class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0"
-          >
-            <a href="#" class="text-white me-3">Cookies Policy</a>
-            <a href="#" class="text-white">Privacy Notice</a>
-          </div>
+          <!-- Right Column -->
           <div class="col-12 col-md-6 text-center text-md-end">
-            &copy; 2023-2024 Superior Solar. All rights reserved.
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#about" class="text-white">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#services" class="text-white">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="#technology" class="text-white">Technology</a>
+              </li>
+              <li>
+                <a href="#accreditations" class="text-white">Accreditations</a>
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="footnotes text-center mt-4">
+          <a href="cookies-policy.html" class="text-white mb-2"
+            >Cookies Policy</a
+          >
+          <a href="privacy-notice.html" class="text-white">Privacy Notice </a>
+          <br />
+          <hr />
+          Registered in England and Wales with company number 14528205 | &copy;
+          2023-2024 Superior Solar. All rights reserved.
         </div>
       </div>
     </footer>
-    <!--footer section end-->
+    <!-- Footer Section End -->
+
     <!--hamburger menu for responsiveness -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
