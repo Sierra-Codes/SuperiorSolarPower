@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --branding-color: #003366;
+  --branding-color: #142a52;
   --secondary-color: #d7d9e4;
   --highlight-color: #fc5d02;
   --primary-link-color: #007bff;
@@ -16,6 +16,7 @@ body {
   background-color: var(--secondary-color);
   font-size: var(--default-font-size);
   margin: 0;
+
   padding: 0;
   height: 100%;
   overflow-x: hidden;
@@ -41,11 +42,12 @@ h2 {
 
 /* Navigation */
 nav {
+  background-color: var(--branding-color);
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 10px;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -141,6 +143,12 @@ footer {
 .accreditation {
   background-color: white;
 }
+/*Footer*/
+footer {
+  margin: 0;
+  padding: 0;
+  background: url("footer-image.jpg") center/cover no-repeat;
+}
 
 /* Utility Classes */
 .img-fluid {
@@ -180,6 +188,10 @@ ul.list-unstyled li a:hover {
 
 .footnotes {
   font-size: 15px;
+}
+
+.footnotes a {
+  text-decoration: none;
 }
 
 /* Responsive Design */
