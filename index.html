@@ -34,15 +34,34 @@
             alt="superior-solar-power-logo"
             width="200"
           />
-          <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#footer">Contact</a>
+          <div class="nav-quote">
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="nav-links">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#footer">Contact</a>
+            </div>
+
+            <div class="quote-request">
+              <button onclick="openOverlay()" class="quote-request-button">
+                Get a quote
+              </button>
+              <div id="overlay" class="overlay">
+                <div class="iframe-container">
+                  <button class="close-button" onclick="closeOverlay()">
+                    &times;
+                  </button>
+                  <iframe
+                    src="https://superior-solar.energiser.ai/"
+                    title="Superior Solar Power"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="contact-item">
             <div class="contact phone">01983 642 611</div>
@@ -469,6 +488,14 @@
           navLinks.classList.toggle("active");
         });
       });
+
+      function openOverlay() {
+        document.getElementById("overlay").style.display = "flex";
+      }
+
+      function closeOverlay() {
+        document.getElementById("overlay").style.display = "none";
+      }
     </script>
   </body>
 </html>
